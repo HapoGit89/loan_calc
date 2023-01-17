@@ -44,6 +44,9 @@ function update() {
 // calculate the monthly payment.  The output should be a string
 // that always has 2 decimal places.
 function calculateMonthlyPayment(values) {
+if (values.amount===''|| values.rate=== '' || values.years===''){
+  throw new Error("please enter values!")
+}
 const P = values.amount;
 const i = values.rate/(100*12)
 const n = values.years*12;
