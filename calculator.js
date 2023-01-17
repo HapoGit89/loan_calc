@@ -30,6 +30,7 @@ amount.value = 300000;
 rate.value = 1.5;
 
 calculateMonthlyPayment(getCurrentUIValues())
+update()
 
 }
 
