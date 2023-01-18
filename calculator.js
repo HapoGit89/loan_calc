@@ -51,8 +51,7 @@ const P = values.amount;
 const i = values.rate/(100*12)
 const n = values.years*12;
 const monthpay = (P*i)/(1-Math.pow((1+i),-n))
-const mprounded =(Math.round(monthpay*100))/100
-const mpString = `${mprounded}`
+const mpString = monthpay.toFixed(2)
 return mpString
 
 
